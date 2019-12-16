@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{64EF7972-BD72-4159-873A-9607EA040219}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DominoOrder</RootNamespace>
+    <AssemblyName>DominoOrder</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonServiceLocator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.2.0.2\lib\net47\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.4.1.0, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.4.1.0, Culture=neutral, PublicKeyToken=669f0b5e8f868abf, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Extras.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.4.1.0, Culture=neutral, PublicKeyToken=5f873c45e98af8a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Models\OrderedItem.cs" />
+    <Compile Include="Models\PizzaModel.cs" />
+    <Compile Include="Models\ToppingModel.cs" />
+    <Compile Include="Services\XmlDataAccess.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelLocator.cs" />
+    <Page Include="Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\Images\Topping\BabySpinach.png" />
+    <Resource Include="Views\Images\Topping\Capsicum.png" />
+    <Resource Include="Views\Images\Topping\ChilliFlakes.png" />
+    <Resource Include="Views\Images\Topping\Feta.png" />
+    <Resource Include="Views\Images\Topping\FireRoastedPepper.png" />
+    <Resource Include="Views\Images\Topping\FreshTomato.png" />
+    <Resource Include="Views\Images\Topping\GarlicSauce.png" />
+    <Resource Include="Views\Images\Topping\GroundBeef.png" />
+    <Resource Include="Views\Images\Topping\ItalianSausage.png" />
+    <Resource Include="Views\Images\Topping\Mayonnaise.png" />
+    <Resource Include="Views\Images\Topping\MozzarellaCheese.png" />
+    <Resource Include="Views\Images\Topping\Mushroom.png" />
+    <Resource Include="Views\Images\Topping\Olives.png" />
+    <Resource Include="Views\Images\Topping\Oregano.png" />
+    <Resource Include="Views\Images\Topping\Pepperoni.png" />
+    <Resource Include="Views\Images\Topping\Pineapple.png" />
+    <Resource Include="Views\Images\Topping\Prawns.png" />
+    <Resource Include="Views\Images\Topping\RasherBacon.png" />
+    <Resource Include="Views\Images\Topping\ReasonedChicken.png" />
+    <Resource Include="Views\Images\Topping\RedOnion.png" />
+    <Resource Include="Views\Images\Topping\SlicedAvocado.png" />
+    <Resource Include="Views\Images\Topping\SmokedHam.png" />
+    <Resource Include="Views\Images\Topping\SpringOnion.png" />
+    <Resource Include="Views\Images\Topping\SteakStrip.png" />
+    <Resource Include="Views\Images\Topping\TacoSauce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\Images\Background\WoodTop.jpg" />
+    <Resource Include="Views\Images\PizzaSlice\AvocadoVeg.png" />
+    <Resource Include="Views\Images\PizzaSlice\BBQMeatLovers.png" />
+    <Resource Include="Views\Images\PizzaSlice\CheeseGarlicPizza.png" />
+    <Resource Include="Views\Images\PizzaSlice\Hawaiian.png" />
+    <Resource Include="Views\Images\PizzaSlice\Pepperoni.png" />
+    <Resource Include="Views\Images\PizzaSlice\SimplyCheese.png" />
+    <Resource Include="Views\Images\PizzaSlice\SpicyVegTrio.png" />
+    <Resource Include="Views\Images\PizzaSlice\Supreme.png" />
+    <Resource Include="Views\Images\PizzaSlice\TacoFiesta.png" />
+    <Resource Include="Views\Images\PizzaSlice\TheGodFather.png" />
+    <Resource Include="Views\Images\PizzaWhole\AvocadoVeg.png" />
+    <Resource Include="Views\Images\PizzaWhole\BBQMeatLovers.png" />
+    <Resource Include="Views\Images\PizzaWhole\CheesyGarlicPizza.png" />
+    <Resource Include="Views\Images\PizzaWhole\Hawaiian.png" />
+    <Resource Include="Views\Images\PizzaWhole\Pepperoni.png" />
+    <Resource Include="Views\Images\PizzaWhole\SimplyCheese.png" />
+    <Resource Include="Views\Images\PizzaWhole\SpicyVegTrio.png" />
+    <Resource Include="Views\Images\PizzaWhole\Supreme.png" />
+    <Resource Include="Views\Images\PizzaWhole\TacoFiesta.png" />
+    <Resource Include="Views\Images\PizzaWhole\TheGodFather.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\Images\Logo\PayPal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\Images\Advertising\Ad1.gif" />
+    <Resource Include="Views\Images\Advertising\Ad2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\Images\Logo\Dominos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Services\PizzaMenu.xml" />
+    <Resource Include="Services\ToppingList.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

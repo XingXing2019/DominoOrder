@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PizzaModels>
+  <PizzaModel>
+    <PizzaName>AVOCADO VEG</PizzaName>
+    <SmallImagePath>Images/PizzaSlice/AvocadoVeg.png</SmallImagePath>
+    <LargeImagePath>Images/PizzaWhole/AvocadoVeg.png</LargeImagePath>
+    <Description>Slices of avocado, Kalamata olives, fire roasted pepper strips, mushrooms, red onion and vibrant capsicum, topped with spring onions.</Description>
+    <Price>15.55</Price>
+    <Energy>4432</Energy>
+  </PizzaModel>
+
+  <PizzaModel>
+    <PizzaName>MEATLOVERS</PizzaName>
+    <SmallImagePath>Images/PizzaSlice/BBQMeatLovers.png</SmallImagePath>
+    <LargeImagePath>Images/PizzaWhole/BBQMeatLovers.png</LargeImagePath>
+    <Description>Mega loaded, mega tasty. Featuring seasoned chicken, pork and fennel sausage, crumbled beef, pepperoni slices, Italian sausage and crispy rasher bacon, brought together with a Hickory BBQ sauce.</Description>
+    <Price>18.95</Price>
+    <Energy>5832</Energy>
+  </PizzaModel>
+
+  <PizzaModel>
+    <PizzaName>CHEESY GARLIC</PizzaName>
+    <SmallImagePath>Images/PizzaSlice/CheeseGarlicPizza.png</SmallImagePath>
+    <LargeImagePath>Images/PizzaWhole/CheesyGarlicPizza.png</LargeImagePath>
+    <Description>Stretchy mozzarella, classic garlic sauce and oregano on a crème fraiche base.</Description>
+    <Price>5.00</Price>
+    <Energy>4256</Energy>
+  </PizzaModel>
+
+  <PizzaModel>
+    <PizzaName>HAWAIIAN</PizzaName>
+    <SmallImagePath>Images/PizzaSlice/Hawaiian.png</SmallImagePath>
+    <LargeImagePath>Images/PizzaWhole/Hawaiian.png</LargeImagePath>
+    <Description>A classic pairing of smoky leg ham and sweet pineapple pieces.</Description>
+    <Price>7.95</Price>
+    <Energy>4416</Energy>
+  </PizzaModel>
+
+  <PizzaModel>
+    <PizzaName>PEPPERONI</PizzaName>
+    <SmallImagePath>Images/PizzaSlice/Pepperoni.png</SmallImagePath>
+    <LargeImagePath>Images/PizzaWhole/Pepperoni.png</LargeImagePath>
+    <Description>A Domino's classic. Slices of crispy pepperoni and creamy mozzarella.</Description>
+    <Price>5.00</Price>
+    <Energy>4672</Energy>
+  </PizzaModel>
+
+  <PizzaModel>
+    <PizzaName>SIMPLY CHEESE</PizzaName>
+    <SmallImagePath>Images/PizzaSlice/SimplyCheese.png</SmallImagePath>
+    <LargeImagePath>Images/PizzaWhole/SimplyCheese.png</LargeImagePath>
+    <Description>Simply topped with lots of melted mozzarella goodness.</Description>
+    <Price>5.00</Price>
+    <Energy>4216</Energy>
+  </PizzaModel>
+
+  <PizzaModel>
+    <PizzaName>SPICY VEG TRIO</PizzaName>
+    <SmallImagePath>Images/PizzaSlice/SpicyVegTrio.png</SmallImagePath>
+    <LargeImagePath>Images/PizzaWhole/SpicyVegTrio.png</LargeImagePath>
+    <Description>A vegetarian trio including fresh baby spinach, sliced red onion and diced tomato, finished with a kick of chilli flakes.</Description>
+    <Price>5.00</Price>
+    <Energy>3728</Energy>
+  </PizzaModel>
+
+  <PizzaModel>
+    <PizzaName>SUPREME</PizzaName>
+    <SmallImagePath>Images/PizzaSlice/Supreme.png</SmallImagePath>
+    <LargeImagePath>Images/PizzaWhole/Supreme.png</LargeImagePath>
+    <Description>Crispy rasher bacon, pepperoni and Italian sausage, topped with fresh mushrooms, capsicum, crumbled beef and juicy pineapple, finished with vibrant spring onions and oregano.</Description>
+    <Price>15.95</Price>
+    <Energy>4992</Energy>
+  </PizzaModel>
+
+  <PizzaModel>
+    <PizzaName>TACO FIESTA</PizzaName>
+    <SmallImagePath>Images/PizzaSlice/TacoFiesta.png</SmallImagePath>
+    <LargeImagePath>Images/PizzaWhole/TacoFiesta.png</LargeImagePath>
+    <Description>Seasoned ground beef, vibrant capsicum, diced tomato and red onion on a cheese sauce base, all tied together with creamy taco sauce.</Description>
+    <Price>15.75</Price>
+    <Energy>4320</Energy>
+  </PizzaModel>
+
+  <PizzaModel>
+    <PizzaName>GODFATHER</PizzaName>
+    <SmallImagePath>Images/PizzaSlice/TheGodFather.png</SmallImagePath>
+    <LargeImagePath>Images/PizzaWhole/TheGodFather.png</LargeImagePath>
+    <Description>Domino's pepperoni paired with Italian sausage, fresh capsicum, diced tomato and Kalamata olives, finished with creamy garlic sauce and oregano.</Description>
+    <Price>15.15</Price>
+    <Energy>4792</Energy>
+  </PizzaModel>
+
+</PizzaModels>

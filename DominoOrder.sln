@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DominoOrder", "DominoOrder\DominoOrder.csproj", "{64EF7972-BD72-4159-873A-9607EA040219}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64EF7972-BD72-4159-873A-9607EA040219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64EF7972-BD72-4159-873A-9607EA040219}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64EF7972-BD72-4159-873A-9607EA040219}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64EF7972-BD72-4159-873A-9607EA040219}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {660DDF6F-3DB7-4794-A931-E64FA8736B33}
+	EndGlobalSection
+EndGlobal
